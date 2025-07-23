@@ -6,9 +6,10 @@ library(teal)
 
 app <- init(
   # add data
-  # these two datasets are already available in baseR?
-  # need to pass by the teal_data module?
-  data = teal_data(IRIS = iris, MTCARS = mtcars),
+  # these two datasets are already available in baseR
+  # need to pass by the teal_data module
+  data = teal_data(IRIS = iris, 
+                   MTCARS = mtcars),
   
   # add modules
   modules = modules(
