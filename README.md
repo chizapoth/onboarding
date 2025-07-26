@@ -1,2 +1,3 @@
-# teal_test
-Test out Teal project
+# Onboarding
+
+This is my onboarding document for the CoreDev, NEST and OCEAN platform.
