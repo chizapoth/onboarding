@@ -29,7 +29,9 @@ demog_vars_adsl <- ADSL |>
 app <- init(
   data = data,
   modules = list(
+
     tm_data_table("Data Table"),
+    
     tm_t_summary(
       label = "Demographic Table",
       dataname = "ADSL",

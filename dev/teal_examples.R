@@ -25,9 +25,6 @@ data <- within(data, {
 #   # modify_header(h3("Test teal 2")) |>
 #   # modify_footer(tags$div(a("Powered by teal", href = "https://insightsengineering.github.io/teal/latest-tag/")))
 
-if (Sys.getenv("QUARTO_ROOT") == "") {
-  shinyApp(app$ui, app$server)
-}
 
 
 app <- init(
@@ -40,3 +37,6 @@ app <- init(
   modify_header("My new header") |>
   modify_footer("My new footer")
 
+if (Sys.getenv("QUARTO_ROOT") == "") {
+  shinyApp(app$ui, app$server)
+}

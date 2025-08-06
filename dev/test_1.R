@@ -36,3 +36,8 @@ app <- init(
 if (interactive()) {
   shinyApp(app$ui, app$server)
 }
+
+library(ggplot2)
+ggplot(mtcars, aes(x = mpg, y = wt)) +
+  geom_point() +
+  labs(title = "Scatterplot of mpg vs wt in mtcars dataset")
